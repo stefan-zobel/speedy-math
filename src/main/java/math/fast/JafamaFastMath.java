@@ -392,7 +392,7 @@ final class JafamaFastMath {
                 double result = ATAN_HI3-((x*(s1+s2)-ATAN_LO3)-x);
                 return negateResult ? -result : result;
             } else { // value >= 2^66, or value is NaN
-                if (value != value) {
+                if (Double.isNaN(value)) {
                     return Double.NaN;
                 } else {
                     return negateResult ? -Math.PI/2 : Math.PI/2;
