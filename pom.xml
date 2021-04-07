@@ -3,7 +3,30 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.sourceforge.streamsupport</groupId>
     <artifactId>speedy-math</artifactId>
+    <packaging>jar</packaging>
     <version>1.0.0</version>
+    <description>Faster Java implementations of hypot, expm1, cos, sinh, cosh, tanh, asin, acos, atan and atan2</description>
+    <url>https://github.com/stefan-zobel/speedy-math/</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Stefan Zobel</name>
+            <email>Spliterator@gmail.com</email>
+            <organization>net.sourceforge.streamsupport</organization>
+            <organizationUrl>https://github.com/stefan-zobel/</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <url>https://github.com/stefan-zobel/speedy-math</url>
+        <connection>scm:git:https://github.com/stefan-zobel/speedy-math.git</connection>
+        <developerConnection>scm:git:https://github.com/stefan-zobel/speedy-math.git</developerConnection>
+    </scm>
 
     <dependencies>
         <dependency>
@@ -27,6 +50,32 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
