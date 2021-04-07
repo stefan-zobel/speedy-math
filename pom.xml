@@ -5,6 +5,7 @@
     <artifactId>speedy-math</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
+    <name>speedy-math</name>
     <description>Faster Java implementations of hypot, expm1, cos, sinh, cosh, tanh, asin, acos, atan and atan2</description>
     <url>https://github.com/stefan-zobel/speedy-math/</url>
 
